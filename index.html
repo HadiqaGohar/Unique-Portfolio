@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Smooth scrolling for anchor links */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-orange-300">
+    <!-- Navbar -->
+    <header class="sticky top-0 z-10 bg-orange-300 shadow-lg">
+        <div class="flex justify-between items-center h-[45px] px-4">
+            <div class="text-xl font-serif font-bold">My Portfolio</div>
+            <nav class="hidden md:flex space-x-4 text-2xl">
+                <a href="#home" class="hover:bg-orange-100 px-4">Home</a>
+                <a href="#about" class="hover:bg-orange-100 px-4">About</a>
+                <a href="#education" class="hover:bg-orange-100 px-4">Education</a>
+                <a href="#skills" class="hover:bg-orange-100 px-4">Skills</a>
+                <a href="#projects" class="hover:bg-orange-100 px-4">Projects</a>
+                <a href="#contact" class="hover:bg-orange-100 px-4">Contact</a>
+            </nav>
+            <button class="md:hidden text-2xl" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+        <div id="mobile-menu" class="md:hidden hidden flex-col space-y-2 bg-orange-300 px-4 py-2">
+            <a href="#home" class="hover:bg-orange-100 px-4 py-2">Home</a>
+            <a href="#about" class="hover:bg-orange-100 px-4 py-2">About</a>
+            <a href="#education" class="hover:bg-orange-100 px-4 py-2">Education</a>
+            <a href="#skills" class="hover:bg-orange-100 px-4 py-2">Skills</a>
+            <a href="#projects" class="hover:bg-orange-100 px-4 py-2">Projects</a>
+            <a href="#contact" class="hover:bg-orange-100 px-4 py-2">Contact</a>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="py-16">
+        <div class="text-5xl text-center h-[70px] font-mono font-bold mt-[50px] animate-pulse">Home Page</div>
+        <div class="max-w-[1320px] max-h-[1320px] md:py-[80] py-8 flex mx-auto sm:flex-row flex-col">
+            <div class="basis-[60%] pb-5 mt-[100px]">
+                <h1 class="text-4xl font-bold">Hello, I'm Hadiqa Gohar</h1>
+                <h2 class="text-4xl font-bold">And, I am a Frontend Developer</h2>
+                <p class="font-medium text-2xl">Also, I'm a Senior Student at Governor Initiative For Cloud Applied
+                    Generative AI</p>
+                <!-- Social Media Icons -->
+                <div class="flex space-x-4 mt-4">
+                    <a href="https://pk.linkedin.com/in/hadiqa-gohar-b64778300"
+                        class="hover:text-orange-600 text-4xl"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://m.facebook.com/p/Hadiqa-Gohar-61554985182774/"
+                        class="hover:text-orange-600 text-4xl"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/hadiqagohar12/" class="hover:text-orange-600 text-4xl"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="tasleemhadiqa76@gmail.com" class="hover:text-orange-600 text-4xl"><i
+                            class="fa-solid fa-envelope"></i></a>
+                    <a href="https://github.com/HadiqaGohar" class="hover:text-orange-600 text-4xl"><i
+                            class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="hover:scale-125 overflow-hidden duration-1000 rounded-full h-[500px] w-[500px]">
+                <img src="korendoll.jpeg" alt="Profile picture of Hadiqa Gohar"
+                    class="basis-[40%] w-full pb-5 h-[600px] shadow-lg p-[2px] mt-auto">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="text-5xl text-center h-[200px] font-mono font-bold animate-pulse ">About Me</div>
+        <div class="max-w-[1320px] max-h-[1320px] md:py-[80] py-8 flex mx-auto sm:flex-row flex-col-reverse">
+            <div class="basis-[60%] pb-5 md:pr-8">
+                <h1 class="text-4xl font-bold animate-bounce">Hi!</h1>
+                <h2 class="text-4xl font-bold animate-pulse">I'm Hadiqa Gohar</h2>
+                <p class="font-medium text-2xl">A passionate web developer with expertise in HTML,
+                    CSS, JavaScript, Python, and TypeScript. My focus is on creating dynamic and responsive web
+                    applications using modern tools like Next.js, React.js, and Tailwind CSS. I enjoy turning complex
+                    ideas into intuitive and engaging user experiences. With a background in science and AI studies, I
+                    bring a strong analytical approach to problem-solving. My commitment to continuous learning drives
+                    me to stay updated with the latest technologies and best practices in web development. I’m excited
+                    about every opportunity to innovate and grow in this ever-evolving field.
+                    .</p>
+            </div>
+            <div class="hover:scale-125 overflow-hidden duration-1000 rounded-full h-[500px] w-[500px]">
+                <img src="korendoll.jpeg" alt="Profile picture of Hadiqa Gohar"
+                    class="basis-[40%] w-full pb-5 h-[600px] shadow-lg p-[2px] mt-auto animate-pulse">
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16">
+        <div class="text-5xl text-center h-[200px] font-mono font-bold animate-pulse">My Education</div>
+        <div class="flex flex-wrap gap-4 shadow-lg p-5 w-full ">
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 flex items-center mb-4 w-full md:w-1/3">
+                <i class="fa-solid fa-school text-3xl mr-4 animate-bounce"></i>
+                <div>
+                    <h1 class="text-2xl font-bold">Matric in Science (Biology)</h1>
+                    <h2 class="text-lg">2019-2020</h2>
+                </div>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 flex items-center mb-4 w-full md:w-1/3">
+                <i class="fa-solid fa-school text-3xl mr-4 animate-bounce"></i>
+                <div>
+                    <h1 class="text-2xl font-bold">HSC in Science (Pre-Medical)</h1>
+                    <h2 class="text-lg">2022-2024</h2>
+                </div>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 flex items-center mb-4 w-full md:w-1/3 ">
+                <i class="fa-solid fa-school text-3xl mr-4 animate-bounce"></i>
+                <div>
+                    <h1 class="text-2xl font-bold">AI in GIAIC</h1>
+                    <h2 class="text-lg">2024-2025</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16">
+        <div class="text-5xl text-center h-[200px] font-mono font-bold animate-pulse ">Skills</div>
+        <div class="shadow-lg grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4 text-center">
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">HTML</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">CSS</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">JavaScript</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">TypeScript</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">Node.js</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">Python</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">NextJS</h1>
+            </div>
+            <div
+                class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300 hover:bg-orange-100 px-4 transform hover:scale-105 transition-transform duration-200">
+                <i class="fa-solid fa-code text-3xl animate-bounce"></i>
+                <h1 class="text-xl">ReactJS</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-16">
+        <div class="text-5xl text-center h-[200px] font-mono font-bold animate-pulse">My Projects</div>
+        <div class="max-w-[1320px] mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <div class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <img src="burger.jpeg" alt="Project 1" class="w-full h-40 object-cover mb-4">
+                    <h2 class="text-xl font-bold">Project 1</h2>
+                    <p>This is my food-restaurant website click on icon and visit my website.</p>
+                    <a href="https://food-restaurant-henna.vercel.app/" class="hover:text-orange-600"><i
+                            class="fa-solid fa-utensils animate-spin"></i></a>
+                </div>
+                <div class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <img src="https://assets.skyfilabs.com/images/blog/rock-paper-scissor-game-using-python.webp"
+                        alt="Project 2" class="w-full h-40 object-cover mb-4">
+                    <h2 class="text-xl font-bold">Project 2</h2>
+                    <p>This is rock paper scissors game click on icon and visit my game.</p>
+                    <a href="https://rock-paper-scissors-game2-omega.vercel.app/" class="hover:text-orange-600"><i
+                            class="fa-solid fa-gamepad animate-spin"></i></a>
+                </div>
+                <div class="border rounded-lg p-4 shadow-lg hover:scale-105 transition-transform duration-300">
+                    <img src="https://www.swic.edu/wp-content/uploads/2021/05/portfolio.png" alt="Project 3"
+                        class="w-full h-40 object-cover mb-4">
+                    <h2 class="text-xl font-bold">Project 3</h2>
+                    <p>This is my latest website click on icon and visit my website.</p>
+                    <a href="https://my-portfolio-pi-lyart.vercel.app/" class="hover:text-orange-600"><i
+                            class="fa-solid fa-code-compare animate-spin"></i></a>
+                </div>
+                
+            </div>
+            <p class="font-mono font-bold mt-[40px] text-2xl animate-pulse"> If you want to see my other projects, click the GitHub, Vercel or NPM icon.</p>
+            <a href="https://github.com/HadiqaGohar" class="hover:text-orange-600 text-4xl"><i
+                    class="fa-brands fa-github animate-bounce mt-[20px]"></i></a>
+            <a href="https://vercel.com/hadiqa-gohar-s-projects" class="hover:text-orange-600 text-4xl"><i
+                     class="fa-solid fa-caret-up animate-bounce mt-[20px] ml-[40px]"></i></a>    
+            <a href="https://www.npmjs.com/~hadiqagohar" class="hover:text-orange-600 text-4xl"><i
+                     class="fa-brands fa-npm animate-bounce mt-[20px] ml-[40px]"></i></a>             
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16">
+        <div class="text-5xl text-center h-[200px] font-mono font-bold animate-pulse ">Contact ME</div>
+        <div class="max-w-[600px] mx-auto px-4">
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+                <div class="flex flex-col">
+                     <!-- web3forms.com -->
+            <input type="hidden" name="access_key" value="671277a9-3056-46df-ae88-682920d99420">
+
+                    <label for="name" class="text-lg font-medium">Name</label>
+                    <input type="text" id="name" name="name" required
+                        class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+                <div class="flex flex-col">
+                    <label for="email" class="text-lg font-medium">Email</label>
+                    <input type="email" id="email" name="email" required
+                        class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500">
+                </div>
+                <div class="flex flex-col">
+                    <label for="message" class="text-lg font-medium">Message</label>
+                    <textarea id="message" name="message" rows="4" required
+                        class="border p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
+                </div>
+                <button type="submit" class="bg-orange-500 text-white px-4 py-2 rounded-md hover:bg-orange-600">Send
+                    Message</button>
+            </form>
+        </div>
+    </section>
+
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="footer-text text-center p-[10px] bg-orange-300 text-black">
+            <p class="m-[0px] text-[14px]">Copyright &copy; 2024 by Hadiqa Gohar | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+    </script>
+</body>
+
+</html>
